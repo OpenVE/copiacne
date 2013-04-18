@@ -1,0 +1,75 @@
+// This is for correct box-stretching function
+*:focus
+  outline none
+
+// box-sizing: box-border FTW
+*
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+  *behavior url(https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc)
+
+body
+  font 16px sans-serif
+  -webkit-text-size-adjust none
+
+a
+  text-decoration none
+strong
+  font-weight bold
+em
+  font-style italic
+
+img, object, embed
+  max-width 100%
+
+.row, body, .container
+  width 100%
+  min-width 0
+  margin-left 0
+  margin-right 0
+  padding-left 0
+  padding-right 0
+
+.row
+  overflow hidden
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol
+    width auto
+    float none
+    margin-left 0
+    margin-right 0
+    padding-left 20px
+    padding-right 20px
+
+// Clearfix
+.clearfix:before, .clearfix:after
+  content: ''
+  display: table
+.clearfix:after
+  clear: both
+.clearfix
+  *zoom: 1
+
+.collapse
+  transition height 0.35s ease
+  position relative
+  overflow hidden
+  height 0
+.collapse.in
+  height auto
+
+// Miscellaneous base functions
+.pull-right, .right
+  float right
+.pull-left, .left
+  float left
+.hide
+  display none
+.show
+  display block
+.invisible
+  visibility hidden
+.btn
+  padding 0.44em 1em
+  border-radius 0.33em
+  box-shadow 0.11em 0.11em 0.55em $light-gray

@@ -1,0 +1,340 @@
+html {
+  color: #000;
+  background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+*:focus {
+  outline: none;
+}
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  *behavior: url("https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc");
+}
+body {
+  font: 16px sans-serif;
+  -webkit-text-size-adjust: none;
+}
+a {
+  text-decoration: none;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+img,
+object,
+embed {
+  max-width: 100%;
+}
+.row,
+body,
+.container {
+  width: 100%;
+  min-width: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  overflow: hidden;
+}
+.row .onecol,
+.row .twocol,
+.row .threecol,
+.row .fourcol,
+.row .fivecol,
+.row .sixcol,
+.row .sevencol,
+.row .eightcol,
+.row .ninecol,
+.row .tencol,
+.row .elevencol,
+.row .twelvecol {
+  width: auto;
+  float: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.collapse {
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -ms-transition: height 0.35s ease;
+  -o-transition: argumtns;
+  transition: height 0.35s ease;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}
+.collapse.in {
+  height: auto;
+}
+.pull-right,
+.right {
+  float: right;
+}
+.pull-left,
+.left {
+  float: left;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.invisible {
+  visibility: hidden;
+}
+.btn {
+  padding: 0.44em 1em;
+  -webkit-border-radius: 0.33em;
+  -moz-border-radius: 0.33em;
+  -o-border-radius: 0.33em;
+  border-radius: 0.33em;
+  -webkit-box-shadow: 0.11em 0.11em 0.55em $light-gray;
+  -moz-box-shadow: 0.11em 0.11em 0.55em $light-gray;
+  -ms-box-shadow: 0.11em 0.11em 0.55em $light-gray;
+  -o-box-shadow: 0.11em 0.11em 0.55em $light-gray;
+  box-shadow: 0.11em 0.11em 0.55em $light-gray;
+}
+@media only screen and (min-width: 480px) {
+  .btn {
+    padding: 0.33em 0.77em !important;
+  }
+  .btn .icon {
+    height: 22px !important;
+    width: 28px !important;
+  }
+  .btn.results {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 45%;
+    height: 150px;
+    background: #eaeaea;
+    padding-top: 55px !important;
+    text-align: center;
+    float: left;
+    margin-left: 15px;
+  }
+  .btn.results a {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .main {
+    margin: 0 auto;
+  }
+  p {
+    margin: 15px 0;
+  }
+  .subheader .title {
+    font-size: 0.44em !important;
+  }
+  .subheader .btn-next .icon-next {
+    background-position: -175px 0 !important;
+  }
+  .subheader .btn-back .icon-back {
+    background-position: -275px 0 !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .row {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .row .onecol,
+  .row .twocol,
+  .row .threecol,
+  .row .fourcol,
+  .row .fivecol,
+  .row .sixcol,
+  .row .sevencol,
+  .row .eightcol,
+  .row .ninecol,
+  .row .tencol,
+  .row .elevencol,
+  .row .twelvecol {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row .onecol,
+  .row .twocol,
+  .row .threecol,
+  .row .fourcol,
+  .row .fivecol,
+  .row .sixcol,
+  .row .sevencol,
+  .row .eightcol,
+  .row .ninecol,
+  .row .tencol,
+  .row .elevencol {
+    margin-right: 3.8%;
+    float: left;
+  }
+  .row .onecol {
+    width: 4.85%;
+  }
+  .row .twocol {
+    width: 13.5%;
+  }
+  .row .threecol {
+    width: 22.15%;
+  }
+  .row .fourcol {
+    width: 30.8%;
+  }
+  .row .fivecol {
+    width: 39.45%;
+  }
+  .row .sixcol {
+    width: 48.1%;
+  }
+  .row .sevencol {
+    width: 56.75%;
+  }
+  .row .eightcol {
+    width: 65.4%;
+  }
+  .row .ninecol {
+    width: 74.05%;
+  }
+  .row .tencol {
+    width: 82.7%;
+  }
+  .row .elevencol {
+    width: 91.35%;
+  }
+  .row .twelvecol {
+    width: 100%;
+    float: left;
+  }
+  .row .last {
+    margin-right: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1382px) {
+  .container {
+    max-width: 1382px;
+  }
+}
