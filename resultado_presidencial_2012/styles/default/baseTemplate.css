@@ -1,0 +1,417 @@
+@charset "utf-8";
+
+body {
+	font-family: Arial, Helvetica, sans-serif; font-size: 10pt;
+	background-color: #c0c0c0;
+	margin:0; 
+	padding:0; 
+	text-align:center;
+	/*
+	font-size: 11px;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	background-color: #c0c0c0;
+	width: 100%;
+	*/
+}
+
+#header
+{
+	width: 900px;
+	height: 100px;
+	background-image: url('http://www.cne.gob.ve/web/imagen/header.png');
+	/*
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	background: url(images/backheader.jpg) no-repeat;
+	*/
+}
+
+#header *.title
+{
+	font-family: Helvetica, Arial, sans-serif;
+	float: left;
+	color: #FF850C;
+	font-size: 17px;
+	margin: 7px 5px 0 400px;
+	_margin: 7px 5px 0 0px;
+	padding: 0 14px 0 0;
+	_padding: 0 14px 0 400px;
+	font-weight: bold;
+	background: url(images/icono.gif) no-repeat;
+	/*background-position: 85px 8px;*/
+	background-position: right 8px;
+}
+
+#header *.info
+{
+	color: #2E0EA1;
+	font-size: 12px;
+	text-transform: capitalize;
+	float: left;
+	margin: 7px 5px 0 400px;
+	_margin: 7px 5px 0 0px;
+	padding: 0 14px 0 0;
+	_padding: 0 14px 0 400px;
+	position: relative;
+	align: right;
+	width: 400px;
+}
+
+#container
+{
+	width: 900px;
+	/* this will create a container 80% of the browser width */
+	background: #FFFFFF;
+	margin: 0 auto;
+	/* the auto margins (in conjunction with a width) center the page */
+	/* border: 1px solid #000000;*/ 
+	text-align: left;
+	/* this overrides the text-align: center on the body element. */
+}
+
+a
+{
+	color: #416a91;
+	text-decoration: none;
+}
+
+#wraperArea
+{
+	/*background: url(images/nav_pixel_200.gif) repeat-y left;*/
+}
+
+
+#locationBar
+{
+	border-color: black;
+	border-bottom: 1;
+	font-weight: bold;
+	/*border: solid 1px #ff0000;*/
+	border-width: 1px 0px 1px 1px;
+	padding: 3px 3px 3px 8px;
+}
+
+
+#regionNavigationBar
+{
+	float: left;
+	width: 200px;
+	/*padding: 0px;*/
+	/*background: #EDEEEE;*/
+	border: solid 1px #adaea9;
+	margin: 0px 5px 0px 5px;
+}
+
+#menuDerecho
+{
+	float: right;
+	width: 180px;
+	/*padding: 0px;*/
+	/*background: #EDEEEE;*/
+	border: solid 1px #adaea9;
+	margin: 0px 5px 5px 5px;
+}
+
+#menuDerechoLogo
+{
+	width: 170px;
+	height: 112px;
+	background-image: url('http://www.cne.gob.ve/divulgacion_presidencial_2012/image/logo_peq.jpg');
+}
+
+#menuDerechoBoleta
+{
+	width: 160px;
+	height: 250px;
+	background-image: url('http://www.cne.gob.ve/divulgacion_presidencial_2012/boletas/thumb/000000P1.jpg'); text-align:center;
+}
+
+#electionNameTxt
+{
+	border-color: black;
+	border-bottom: 1;
+	font-weight: bold;
+	/*font-family: arial;*/
+	/*font-size: small;*/
+	/*color: grey;*/
+	padding: 3px 3px 3px 8px;
+	margin: 0px 0px 4px 0px;
+	/*height: 30px;*/
+	
+	font-family:Arial;
+	font-size:22px;
+	color:#ad529e;
+	font-weight:bold;
+	
+}
+
+#electionDateTxt
+{
+	font-family:Arial;
+	font-size:17px;
+	color:#acbb37;
+	font-style:italic;
+	padding: 3px 5px 3px 8px;
+}
+
+.navBarTitle
+{
+	font-weight: bold;
+	background-color: White;
+	border: solid 1px #c9c9c9;
+	border-width: 1px 0px 1px 1px;
+	padding: 3px 3px 3px 8px;
+	margin: 12px 0px 4px 0px;
+}
+
+#mainContent
+{
+	float: left;
+	width: 480px;
+	background: white;
+	margin: 0px;
+}
+
+#tablaResultados
+{
+	width: 480px;
+	padding: 5px;
+	background: white;
+	border: solid 1px #adaea9;
+}
+
+#fichaTecnica
+{
+	width: 480px;
+	padding: 5px;
+	background: white;
+	border: solid 1px #adaea9;
+	margin: 10px 0px;
+}
+
+.fichaTecnicaText
+{
+	padding: 10px;
+	/*color: #73716c;*/
+	color: #5c5b57;
+}
+
+#cambioAlianza
+{
+	width: 480px;
+	padding: 5px;
+	background: white;
+	border: solid 1px #adaea9;
+	margin: 10px 0px;
+}
+
+.cambioAlianzaText
+{
+	padding: 10px;
+	/*color: #73716c;*/
+	color: #5c5b57;
+}
+/* Sortable tables */
+table.sortable thead
+{
+    cursor: default;
+}
+
+/*Agregado CNE*/
+.div_oculto
+{	visibility:hidden; display:none;}
+
+.div_visible
+{ 	visibility:visible; display:block;}
+
+
+
+#footer
+{
+	width: 900px; height: 46px;
+	/* this padding matches the left alignment of the elements in the divs that appear above it. */
+	/*background: #DDDDDD;*/
+	background-image: url('http://www.cne.gob.ve/web/imagen/footer.jpg');
+	color:#575756;
+}
+
+.boxheader
+{
+	background-color: #e7dcc0;
+	/*border-style: solid;*/
+	/*border-width: 1px;*/
+	/*border-color: #c9c9c9;*/
+	padding: 3px 8px 4px 7px;
+	/*font-weight: bold;*/
+	/*color: #414141;*/
+	/*font-size: 12px;*/
+}
+
+.boxtd_big
+{
+	height: 22px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #ad529e;
+	border-style: solid;
+	border-width: 0px 0px 0px 0px;
+	border-color: #c9c9c9;
+	border-top-style: solid;
+	border-right-style-value: solid;
+	border-bottom-style: solid;
+	border-left-style-value: solid;
+	border-left-style-ltr-source: physical;
+	border-left-style-rtl-source: physical;
+	border-right-style-ltr-source: physical;
+	border-right-style-rtl-source: physical;
+	
+	border-top-width: 0px;
+	border-right-width-value: 0px;
+	border-bottom-width: 0px;
+	border-left-width-value: 0px;
+	
+	border-left-width-ltr-source: physical;
+	border-left-width-rtl-source: physical;
+	border-right-width-ltr-source: physical;
+	border-right-width-rtl-source: physical;
+	border-top-color: #c9c9c9;
+	border-right-color-value: #c9c9c9;
+	border-bottom-color: #c9c9c9;
+	border-left-color-value: #c9c9c9;
+	border-left-color-ltr-source: physical;
+	border-left-color-rtl-source: physical;
+	border-right-color-ltr-source: physical;
+	border-right-color-rtl-source: physical;
+}
+
+.resultTable
+{
+	width = 515px;
+	background-color: black;
+}
+
+.statisticsTitle
+{
+	height: 22px;
+	font-weight: bold;
+	color: #414141;
+	border-style: solid;
+	border-width: 0px 0px 0px 0px;
+	border-color: #c9c9c9;
+	background-color: #e9e9e9;
+}
+
+.tbdarkrow
+{
+	background-color: #EAEAEA;
+	height: 19px;
+}
+
+.tbdarkrow td
+{
+	padding: 0px 2px 0px 6px;
+	border: solid 1px #C9C9C9;
+	border-width: 1px 0px 0px 0px;
+}
+
+.tblightrow
+{
+	background-color: white;
+	height: 19px;
+}
+
+.tbsubtotalrow
+{
+	height: 19px;
+	color: #154fc5;
+	font-weight: bold;
+	background-color: #f5f5e7;
+}
+
+.tblightrow td
+{
+	padding: 0px 2px 0px 6px;
+	border: solid 1px #C9C9C9;
+	border-width: 0px 0px 1px 0px;
+}
+
+.lightRowContent
+{
+	/*padding: 0px 2px 0px 6px;*/
+	padding: 0px;
+	border: solid 1px #5c5b57;
+	border-width: 0px 0px 1px 0px;
+}
+
+ul { margin-left: 0; padding-left: 0; }
+
+ul li { margin-left: 0em; }
+
+.region-nav-item
+{
+	padding: 1px 3px 1px 3px;
+	border: solid 1px #C9C9C9;
+	border-width: 1px 0px 0px 0px;
+	list-style-type: none;
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt
+{
+	/* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+
+.fltlft
+{
+	/* this class can be used to float an element left in your page The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+
+.clearing
+{
+	height: 0;
+	clear: both;
+}
+
+.clearfloat
+{
+	/* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain its child floats */
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+.frmBtn {font:normal normal 10pt Helvetica, Arial, sans-serif;color:#333333;background-image:URL(images/downbutton.png);cursor:pointer;border:solid 0px #0268B0;height: 31px;width:53%;}
+.button {color:#ffffff;background-color:#262873;cursor:hand;border:solid 1px #000000; padding-top: 2px; padding-bottom: 2px; padding-left: 80px; padding-right: 80px;font-weight: bold;}
+.boton { font-family:Arial; font-size:12px; color:#416a91;}
+.pgeMnu
+{
+	color:#FFFFFF;
+	font:normal normal bold 11pt/normal Helvetica, Arial, sans-serif;
+	padding-bottom:4px;
+	padding-left:4px;
+	padding-right:4px;
+	padding-top:4px;
+	text-align:center;
+}
+
+#glhMnu td
+{
+	background-color:#9FA8C0;
+	position:relative;
+}
+
+#glhMnu a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
