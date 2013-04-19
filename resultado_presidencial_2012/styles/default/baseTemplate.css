@@ -20,7 +20,7 @@ body {
 {
 	width: 900px;
 	height: 100px;
-	background-image: url('http://www.cne.gob.ve/web/imagen/header.png');
+	background-image: url('http://copiacne.joseluisrivas.net/web/imagen/header.png');
 	/*
 	width: 100%;
 	margin: 0;
@@ -120,14 +120,14 @@ a
 {
 	width: 170px;
 	height: 112px;
-	background-image: url('http://www.cne.gob.ve/divulgacion_presidencial_2012/image/logo_peq.jpg');
+	background-image: url('http://copiacne.joseluisrivas.net/divulgacion_presidencial_2012/image/logo_peq.jpg');
 }
 
 #menuDerechoBoleta
 {
 	width: 160px;
 	height: 250px;
-	background-image: url('http://www.cne.gob.ve/divulgacion_presidencial_2012/boletas/thumb/000000P1.jpg'); text-align:center;
+	background-image: url('http://copiacne.joseluisrivas.net/divulgacion_presidencial_2012/boletas/thumb/000000P1.jpg'); text-align:center;
 }
 
 #electionNameTxt
@@ -235,7 +235,7 @@ table.sortable thead
 	width: 900px; height: 46px;
 	/* this padding matches the left alignment of the elements in the divs that appear above it. */
 	/*background: #DDDDDD;*/
-	background-image: url('http://www.cne.gob.ve/web/imagen/footer.jpg');
+	background-image: url('http://copiacne.joseluisrivas.net/web/imagen/footer.jpg');
 	color:#575756;
 }
 
