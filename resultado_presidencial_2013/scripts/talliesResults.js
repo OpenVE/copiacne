@@ -146,4 +146,29 @@ function addLastCATr(){
 
 	newTR.appendChild(caInformation);  
 	myTable.appendChild(newTR);
+}innerHTML = "Acta recibida tipo: MANUAL";
+	} else {
+		tallyTypeTd.innerHTML = "Acta recibida tipo: AUTOMATIZADA";
+	}
+	   
+	newTR.appendChild(tallyTypeTd);
+	myTable.appendChild(newTR);
+}
+
+function addLastCATr(){
+	myTable = document.getElementById(globalTableName);
+	var newTR = document.createElement("tr");
+	newTR.setAttribute('class','tblightrow');
+	
+	var caInformation = document.createElement("td");
+   	caInformation.setAttribute('class','lightRowContent');
+   	caInformation.setAttribute('align','left');
+  	caInformation.setAttribute('colspan','5');
+   	caInformation.setAttribute('width','100%');
+   	caInformation.innerHTML = "<font color='#990000'> * </font> Opciones con cambios de alianza";
+
+	newTR.appendChild(caInformation);  
+	myTable.appendChild(newTR);
+}
+wTR);
 }
