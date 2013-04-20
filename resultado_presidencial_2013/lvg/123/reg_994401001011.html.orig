@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Divulgaci&oacuten Elecciones Presidenciales - 14 de Abril de 2013</title>
+<link href="../../styles/default/baseTemplate.css" rel="stylesheet"
+	type="text/css" />
+<link href="../../styles/default/thirdparty/tooltipster.css" rel="stylesheet"
+	type="text/css" />
+<script src="../../scripts/sorttable.js" type=""></script>
+<script src="../../scripts/showContest.js" type=""></script>
+<script src="../../scripts/jquery-1.8.0.js" type=""></script>
+<script src="../../scripts/jquery.tooltipster.js" type=""></script>
+<script src="../../scripts/horizontalChart.js" type=""></script>
+<script src="../../scripts/d3.v2.js" type=""></script>
+<script src="../../scripts/simpleDateFormat.js" type=""></script>
+<script src="../../scripts/talliesResults.js" type=""></script>
+<script src="../../scripts/cambiosAlianzas.js" type=""></script>
+ <script>
+    $(document).ready(function() {
+    	$('.tooltip').tooltipster({
+    		position: 'right'
+    	});
+    });
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div style="border-color: black; border-bottom: 1">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td align="left" class="electionNameTxt" id="electionNameTxt" width="60%">DIVULGACI&Oacute;N PRESIDENCIALES 2013</td>
+				<td align="right" class="electionDateTxt" id="electionDateTxt" width="40%">14 de Abril de 2013</td>
+			</tr>
+		</table>
+	</div>
+	<div class="locationBar" id="locationBar"
+		style="border-color: black; border-bottom: 1">
+			<a	id="region_ref" href="../../r/1/reg_000000.html">Pais:
+			VENEZUELA</a> - 
+			<a	id="region_ref" href="../../r/1/reg_990000.html">Embajada:
+			EMBAJADA</a> - 
+			<a	id="region_ref" href="../../r/1/reg_994400.html">Pais Embajada:
+			JAMAICA</a> - 
+			<a	id="region_ref" href="../../r/3/reg_994401.html">Ciudad:
+			KINGSTON</a> - 
+			<a	id="region_ref" href="../../pp/9/reg_994401001.html">Centro de Votaci&oacute;n:
+			JAMAICA</a> - 
+		<a id="region_ref" href="../../lvg/123/reg_994401001011.html">Mesa:
+		1</a>
+	</div>
+	<div id="wraperArea">
+		<div id="regionNavigationBar">
+			<p align="center" style="font-weight: bold;">
+			</p>
+			<ul>
+			</ul>
+			<table cellspacing="0" cellpadding="0" align="center" style="width: 100%">
+				<tbody>
+					<tr>
+						<td>
+							<p align="center"><input type="button" name="button"
+								value="P&aacute;gina Principal" class="boton"
+								onclick="location.href='../../r/1/reg_000000.html'" tabindex="1" /></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p align="center"><input type="button" name="button"
+								value="Volver" class="boton"
+								onclick="location.href='../../pp/9/reg_994401001.html'" tabindex="1" />
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="mainContent">
+<div id="boxheader" class="boxheader" style="width=100%">
+	<center>No hay resultados disponibles para esta regi&oacute;n en particular. Intente de nuevo en unos momentos</center>
+</div>
+			<div id="cClassNoResultDiv"></div>
+		</div>
+		<div id="menuDerecho">
+			<div id="menuDerechoLogo"></div>
+			<br />
+			<div align="justified" style="padding-left:3px">
+			Para visualizar la informaci&oacute;n de los Candidatos, Boletas y C&oacute;mo votar, haga click <a id="cne_site_ref" href="http://www.cne.gob.ve/divulgacion_presidencial_2013/" target="_blank">aqu&iacute;</a>
+			</div>	
+			<br />
+			<br />
+			<table width="100%" border="0">
+			<tr>
+				<td colspan="3" colspan="2" class="boxtd_big"><center>Fecha de actualizaci&oacute;n</center></td>
+			</tr>
+			<tr class="tblightrow">
+				<td rowspan="2"><img src="../../styles/default/images/time_clock.png" alt="Fecha de actualizaci&oacute;n" /></td>
+				<td width="100%">
+					jueves 18 de abril de 2013
+				</td>	
+			</tr>
+			<tr class="tblightrow">
+				<td width="100%">
+					06:03:17 PM
+				</td>
+			</tr>
+			</table>
+		</div>
+		<div class="clearing">&nbsp;</div>
+	</div>
+	<br class="clearfloat" />
+	<div id="footer">
+		<table width="100%">
+			<tr>
+				<td height="40" align="center" valign="middle">CONSEJO NACIONAL ELECTORAL</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

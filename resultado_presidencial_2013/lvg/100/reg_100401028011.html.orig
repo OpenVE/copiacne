@@ -1,0 +1,600 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Divulgaci&oacuten Elecciones Presidenciales - 14 de Abril de 2013</title>
+<link href="../../styles/default/baseTemplate.css" rel="stylesheet"
+	type="text/css" />
+<link href="../../styles/default/thirdparty/tooltipster.css" rel="stylesheet"
+	type="text/css" />
+<script src="../../scripts/sorttable.js" type=""></script>
+<script src="../../scripts/showContest.js" type=""></script>
+<script src="../../scripts/jquery-1.8.0.js" type=""></script>
+<script src="../../scripts/jquery.tooltipster.js" type=""></script>
+<script src="../../scripts/horizontalChart.js" type=""></script>
+<script src="../../scripts/d3.v2.js" type=""></script>
+<script src="../../scripts/simpleDateFormat.js" type=""></script>
+<script src="../../scripts/talliesResults.js" type=""></script>
+<script src="../../scripts/cambiosAlianzas.js" type=""></script>
+ <script>
+    $(document).ready(function() {
+    	$('.tooltip').tooltipster({
+    		position: 'right'
+    	});
+    });
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="header"></div>
+	<div style="border-color: black; border-bottom: 1">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td align="left" class="electionNameTxt" id="electionNameTxt" width="60%">DIVULGACI&Oacute;N PRESIDENCIALES 2013</td>
+				<td align="right" class="electionDateTxt" id="electionDateTxt" width="40%">14 de Abril de 2013</td>
+			</tr>
+		</table>
+	</div>
+	<div class="locationBar" id="locationBar"
+		style="border-color: black; border-bottom: 1">
+			<a	id="region_ref" href="../../r/1/reg_000000.html">Pais:
+			VENEZUELA</a> - 
+			<a	id="region_ref" href="../../r/1/reg_100000.html">Estado:
+			EDO. GUARICO</a> - 
+			<a	id="region_ref" href="../../r/1/reg_100400.html">Municipio:
+			MP. MONAGAS</a> - 
+			<a	id="region_ref" href="../../r/2/reg_100401.html">Parroquia:
+			PQ. ALTAGRACIA DE ORITUCO</a> - 
+			<a	id="region_ref" href="../../pp/12/reg_100401028.html">Centro de Votaci&oacute;n:
+			ESCUELA BASICA ANDRES BELLO</a> - 
+		<a id="region_ref" href="../../lvg/100/reg_100401028011.html">Mesa:
+		1</a>
+	</div>
+	<div id="wraperArea">
+		<div id="regionNavigationBar">
+			<p align="center" style="font-weight: bold;">
+			</p>
+			<ul>
+			</ul>
+			<table cellspacing="0" cellpadding="0" align="center" style="width: 100%">
+				<tbody>
+					<tr>
+						<td>
+							<p align="center"><input type="button" name="button"
+								value="P&aacute;gina Principal" class="boton"
+								onclick="location.href='../../r/1/reg_000000.html'" tabindex="1" /></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p align="center"><input type="button" name="button"
+								value="Volver" class="boton"
+								onclick="location.href='../../pp/12/reg_100401028.html'" tabindex="1" />
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="mainContent">
+				<div id="cclass.21" >
+			<hr />
+<div id="resultDiv.21" style="display:none">
+	<div id="tablaResultados">
+		<table border="0" style="width:100%">
+		  <thead>
+		     <tr>
+		     	<th class="boxtd_big" align="center" width="60"></th>
+		     	<th class="boxtd_big" align="center">Candidato</th>     	
+		    	<th class="boxtd_big" align="center">Votos</th>
+		    	<th class="boxtd_big" align="center">%</th>
+		     </tr>
+		  </thead>
+				<tr class="tbsubtotalrow" >
+					<td class="lightRowContent" align="center">
+											<img src="../../imagenes/candidatos/4.png" alt="" width="50" />
+					</td>
+					<td class="lightRowContent">					
+						<table width="100%">
+							<tr>
+								<td align="left">
+									<A href="javascript:showCandidateInfo(1);">NICOLAS MADURO</A>
+								</td>
+							</tr>
+								<tr>
+									<td>
+										<font color="#990000">Adjudicado</font>
+									</td>
+								</tr>
+						</table>
+					</td>
+					<td class="lightRowContent" align="right"><span>230</span></td>
+					<td class="lightRowContent" align="right"><span>81,85%</span></td>
+				</tr>
+	  				 		<tr id="tr1" class="tblightrownoborder" style="display:none">
+	  				 			<td colspan="6">
+	  				 				<table id="table1" width="100%" align="center" class="n_s">
+										<thead  style="display:none">
+										     <tr>
+										     	<th class="boxtd_big" align="center" width="60"></th>
+										    	<th id="th1" class="boxtd_big" align="center" >Votos</th>
+										    	<th class="boxtd_big" align="center">%</th>
+										     </tr>
+									     </thead>
+										  		<tr>
+													<td width="100%" colspan="3">
+														<div id="adjudicated_" name="adj_hidden_1"></br><font color="#990000">Adjudicado - 1</font>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/84.png" alt="PARTIDO SOCIALISTA UNIDO DE VENEZUELA" title="PARTIDO SOCIALISTA UNIDO DE VENEZUELA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>172</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>61,20%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/85.png" alt="POR LA DEMOCRACIA SOCIAL" title="POR LA DEMOCRACIA SOCIAL"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>12</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>4,27%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/67.png" alt="PATRIA PARA TODOS" title="PATRIA PARA TODOS"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>10</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>3,55%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/66.png" alt="TENDENCIAS UNIFICADAS PARA ALCANZAR EL MOV. DE ACCION REV. ORGANIZADA" title="TENDENCIAS UNIFICADAS PARA ALCANZAR EL MOV. DE ACCION REV. ORGANIZADA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>8</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>2,84%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/65.png" alt="NUEVO CAMINO REVOLUCIONARIO" title="NUEVO CAMINO REVOLUCIONARIO"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>7</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>2,49%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/72.png" alt="PARTIDO COMUNISTA DE VENEZUELA" title="PARTIDO COMUNISTA DE VENEZUELA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>5</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1,77%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/71.png" alt="REDES DE RESPUESTAS DE CAMBIOS COMUNITARIOS" title="REDES DE RESPUESTAS DE CAMBIOS COMUNITARIOS"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>4</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1,42%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/73.png" alt="ORGANIZACION RENOVADORA AUTENTICA" title="ORGANIZACION RENOVADORA AUTENTICA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>4</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1,42%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/64.png" alt="MOVIMIENTO ELECTORAL DEL PUEBLO" title="MOVIMIENTO ELECTORAL DEL PUEBLO"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>3</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1,06%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/63.png" alt="UNIDAD POPULAR VENEZOLANA" title="UNIDAD POPULAR VENEZOLANA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>2</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,71%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/75.png" alt="JUVENTUD UNIDA EN ACCION NACIONAL CON BIMBA" title="JUVENTUD UNIDA EN ACCION NACIONAL CON BIMBA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,35%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/69.png" alt="PARTIDO REVOLUCIONARIO DEL TRABAJO" title="PARTIDO REVOLUCIONARIO DEL TRABAJO"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,35%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/70.png" alt="CORRIENTES REVOLUCIONARIAS VENEZOLANAS" title="CORRIENTES REVOLUCIONARIAS VENEZOLANAS"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,35%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/68.png" alt="INDEPENDIENTES POR LA COMUNIDAD NACIONAL" title="INDEPENDIENTES POR LA COMUNIDAD NACIONAL"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,00%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+								</table>
+							</td>
+						</tr>
+				<tr class="tbsubtotalrow" >
+					<td class="lightRowContent" align="center">
+											<img src="../../imagenes/candidatos/7.png" alt="" width="50" />
+					</td>
+					<td class="lightRowContent">					
+						<table width="100%">
+							<tr>
+								<td align="left">
+									<A href="javascript:showCandidateInfo(5);">HENRIQUE CAPRILES RADONSKI</A>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="lightRowContent" align="right"><span>50</span></td>
+					<td class="lightRowContent" align="right"><span>17,79%</span></td>
+				</tr>
+	  				 		<tr id="tr5" class="tblightrownoborder" style="display:none">
+	  				 			<td colspan="6">
+	  				 				<table id="table5" width="100%" align="center" class="n_s">
+										<thead  style="display:none">
+										     <tr>
+										     	<th class="boxtd_big" align="center" width="60"></th>
+										    	<th id="th5" class="boxtd_big" align="center" >Votos</th>
+										    	<th class="boxtd_big" align="center">%</th>
+										     </tr>
+									     </thead>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/78.png" alt="MESA DE LA UNIDAD DEMOCRATICA" title="MESA DE LA UNIDAD DEMOCRATICA"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>50</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>17,79%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+								</table>
+							</td>
+						</tr>
+				<tr class="tbsubtotalrow" >
+					<td class="lightRowContent" align="center">
+											<img src="../../imagenes/candidatos/3.png" alt="" width="50" />
+					</td>
+					<td class="lightRowContent">					
+						<table width="100%">
+							<tr>
+								<td align="left">
+									<A href="javascript:showCandidateInfo(2);">EUSEBIO MENDEZ</A>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="lightRowContent" align="right"><span>1</span></td>
+					<td class="lightRowContent" align="right"><span>0,35%</span></td>
+				</tr>
+	  				 		<tr id="tr2" class="tblightrownoborder" style="display:none">
+	  				 			<td colspan="6">
+	  				 				<table id="table2" width="100%" align="center" class="n_s">
+										<thead  style="display:none">
+										     <tr>
+										     	<th class="boxtd_big" align="center" width="60"></th>
+										    	<th id="th2" class="boxtd_big" align="center" >Votos</th>
+										    	<th class="boxtd_big" align="center">%</th>
+										     </tr>
+									     </thead>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/74.png" alt="NUEVA VISION PARA MI PAIS" title="NUEVA VISION PARA MI PAIS"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>1</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,35%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+								</table>
+							</td>
+						</tr>
+				<tr class="tbsubtotalrow" >
+					<td class="lightRowContent" align="center">
+											<img src="../../imagenes/candidatos/5.png" alt="" width="50" />
+					</td>
+					<td class="lightRowContent">					
+						<table width="100%">
+							<tr>
+								<td align="left">
+									<A href="javascript:showCandidateInfo(4);">REINA SEQUERA</A>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="lightRowContent" align="right"><span>0</span></td>
+					<td class="lightRowContent" align="right"><span>0,00%</span></td>
+				</tr>
+	  				 		<tr id="tr4" class="tblightrownoborder" style="display:none">
+	  				 			<td colspan="6">
+	  				 				<table id="table4" width="100%" align="center" class="n_s">
+										<thead  style="display:none">
+										     <tr>
+										     	<th class="boxtd_big" align="center" width="60"></th>
+										    	<th id="th4" class="boxtd_big" align="center" >Votos</th>
+										    	<th class="boxtd_big" align="center">%</th>
+										     </tr>
+									     </thead>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/77.png" alt="PODER LABORAL" title="PODER LABORAL"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,00%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+								</table>
+							</td>
+						</tr>
+				<tr class="tbsubtotalrow" >
+					<td class="lightRowContent" align="center">
+											<img src="../../imagenes/candidatos/2.png" alt="" width="50" />
+					</td>
+					<td class="lightRowContent">					
+						<table width="100%">
+							<tr>
+								<td align="left">
+									<A href="javascript:showCandidateInfo(3);">MARIA BOLIVAR</A>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="lightRowContent" align="right"><span>0</span></td>
+					<td class="lightRowContent" align="right"><span>0,00%</span></td>
+				</tr>
+	  				 		<tr id="tr3" class="tblightrownoborder" style="display:none">
+	  				 			<td colspan="6">
+	  				 				<table id="table3" width="100%" align="center" class="n_s">
+										<thead  style="display:none">
+										     <tr>
+										     	<th class="boxtd_big" align="center" width="60"></th>
+										    	<th id="th3" class="boxtd_big" align="center" >Votos</th>
+										    	<th class="boxtd_big" align="center">%</th>
+										     </tr>
+									     </thead>
+												<tr>
+													<td>
+														<table width="95%" align="center">
+															<tr class="tblightrow">
+												 				<td class="lightRowContent"  align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/76.png" alt="PARTIDO DEMOCRATICO UNIDOS POR LA PAZ Y LA LIBERTAD" title="PARTIDO DEMOCRATICO UNIDOS POR LA PAZ Y LA LIBERTAD"/></span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0</span></td>
+																<td class="lightRowContent" align="right" width="35%"><span>0,00%</span></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+								</table>
+							</td>
+						</tr>
+				<tr class="tbsubtotalrow" >
+					<td class="lightRowContent" align="center">
+											<img src="../../imagenes/candidatos/1.png" alt="" width="50" />
+					</td>
+					<td class="lightRowContent">					
+						<table width="100%">
+							<tr>
+								<td align="left">
+									<A href="javascript:showCandidateInfo(6);">JULIO MORA</A>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="lightRowContent" align="right"><span>0</span></td>
+					<td class="lightRowContent" align="right"><span>0,00%</span></td>
+				</tr>
+		  				 		<tr id="tr6" class="tblightrownoborder" style="display:none">
+		  				 			<td colspan="6">
+		  				 			<table id="table6" width="75%" align="center" class="n_s">
+										<thead  style="display:none">
+										     <tr>
+										     	<th class="boxtd_big" align="center" width="60"></th>
+										    	<th id="th6" class="boxtd_big" align="center" >Votos</th>
+										    	<th class="boxtd_big" align="center">%</th>
+										     </tr>
+										  </thead>
+										<tr>
+											<td>
+												<table width="95%" align="center">
+													<tr class="tblightrow">
+											 				<td class="lightRowContent" align="right" width="30%"><span><img src="../../imagenes/partidos/partidos1/79.png" alt="UNIDAD DEMOCRATICA" title="UNIDAD DEMOCRATICA"/></span></td>
+														<td class="lightRowContent" align="right" width="35%"><span>0</span></td>
+														<td class="lightRowContent" align="right" width="35%"><span>0,00%</span></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+							</table>
+						</td>
+					</tr>
+	  	</table>
+	  </div>
+			<a href="javascript:displayTally('21_tablaResultados_tally',100805,21,'../../tallies/100/100805/21.json','../../talliesImages/100/100805/21.png','21_${$tableName}',true,false);">Detalle del Acta</a>
+			  <div id="21_tablaResultados_tally" style="display:none">
+				<table id="21_${$tableName}" style="width:100%" border="0">
+				   <thead>
+				     <tr>
+				     	<th class="boxtd_big" align="center" width="60">Candidato</th>
+				     	<th class="boxtd_big" align="center">Partido</th>     	
+				    	<th class="boxtd_big" align="center">Votos</th>
+				     </tr>
+				  </thead>
+			  	</table>
+			  </div>
+	  <div id="fichaTecnica">
+		<table width="100%" border="0">
+		  <tr>
+		    <td colspan="3" class="boxtd_big"><center>Ficha T&eacute;cnica</center></td>
+		  </tr>
+		   <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>ELECTORES ESPERADOS</b></span></td>
+		    <td align="right"></td>
+		    <td align="right">340</td>
+		  </tr>
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>ELECTORES EN ACTAS TRANSMITIDAS</b></span></td>
+		    <td align="right">100 %</td>
+		    <td align="right">340</td>
+		  </tr>
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>ELECTORES ESCRUTADOS</b></span></td>
+		    <td align="right"></td>
+		    <td align="right">286</td>
+		  </tr>
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>PARTICIPACI&Oacute;N RELATIVA</b></span></td>
+		    <td align="right">84,11 %</td>
+		    <td align="right"></td>
+		  </tr>
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>VOTOS ESCRUTADOS</b></span></td>
+		    <td align="right"></td>
+		    <td align="right">286</td>
+		  </tr>
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>VOTOS V&Aacute;LIDOS</b></span></td>
+		    <td align="right">98,25 %</td>
+		    <td align="right">281</td>
+		  </tr>
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>VOTOS NULOS</b></span></td>
+		    <td align="right">1,74 %</td> 
+			<td align="right">5</td>
+		  </tr> 
+		  <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>ACTAS TOTALES</b></span></td>
+		    <td align="right"></td>
+		    <td align="right">1</td>
+		  </tr>
+		   <tr class="tblightrow">
+		    <td><span style="padding-left: 7px;"><b>ACTAS ESCRUTADAS</b></span></td>
+		    <td align="right">100 %</td>
+		    <td align="right">1</td>
+		  </tr>
+		</table>
+	</div>
+			<div id="21_party_endorsement" style="display:none" ></div>
+			<script>
+				includePartyEndorsement('21_party_endorsement','../../cambioAlianzas/21.html');
+			</script>	
+	<br>
+	<input id="var.resultDiv.21" type="hidden" value="0"/>
+</div>
+</div>
+			<div id="cClassNoResultDiv"></div>
+		</div>
+		<div id="menuDerecho">
+			<div id="menuDerechoLogo"></div>
+			<br />
+			<div align="justified" style="padding-left:3px">
+			Para visualizar la informaci&oacute;n de los Candidatos, Boletas y C&oacute;mo votar, haga click <a id="cne_site_ref" href="http://www.cne.gob.ve/divulgacion_presidencial_2013/" target="_blank">aqu&iacute;</a>
+			</div>	
+			<br />
+			<br />
+			<table width="100%" border="0">
+			<tr>
+				<td colspan="3" colspan="2" class="boxtd_big"><center>Fecha de actualizaci&oacute;n</center></td>
+			</tr>
+			<tr class="tblightrow">
+				<td rowspan="2"><img src="../../styles/default/images/time_clock.png" alt="Fecha de actualizaci&oacute;n" /></td>
+				<td width="100%">
+					jueves 18 de abril de 2013
+				</td>	
+			</tr>
+			<tr class="tblightrow">
+				<td width="100%">
+					06:09:00 PM
+				</td>
+			</tr>
+			</table>
+		</div>
+		<div class="clearing">&nbsp;</div>
+	</div>
+	<br class="clearfloat" />
+	<div id="footer">
+		<table width="100%">
+			<tr>
+				<td height="40" align="center" valign="middle">CONSEJO NACIONAL ELECTORAL</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
